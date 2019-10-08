@@ -1,0 +1,84 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Acceso a elementos DOM</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- PROBLEMA 1 -->
+    <div class="container">
+      <h1>Problema 1</h1>
+      <h2>Tipo de cambio</h2>
+      <form>
+        <label for="pesos">Cantidad en pesos:</label>
+        <input type="number" id="pesos" />
+        <label for="resultado1">Resultado:</label>
+        <input type="text" id="resultado1" class="resultado" readonly />
+        <div class="panel">
+          <div class="row">
+            <input
+              type="button"
+              value="Convertir"
+              class="column"
+              id="btnConvertir"
+            />
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- PROBLEMA 2 -->
+    <div class="container">
+      <h1>Problema 2</h1>
+      <h2>Sueldo</h2>
+      <form>
+        <label for="usuario">Usuario:</label>
+        <input type="text" id="usuario" />
+        <label for="clave">Clave:</label>
+        <input type="password" id="clave" />
+        <label for="horas">Horas:</label>
+        <input type="number" id="horas" />
+        <label for="resultado2">Resultado:</label>
+        <input type="text" id="resultado2" class="resultado" readonly />
+        <div class="panel">
+          <div class="row">
+            <input type="button" value="Sueldo" class="column" id="btnSueldo" />
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- PROBLEMA 3 -->
+    <div class="container">
+      <h1>Problema 3</h1>
+      <h2>Venta de boletos</h2>
+      <form>
+        <label for="boletos">Número de boletos:</label>
+        <input type="number" id="boletos" />
+        <label for="seccion">Sección:</label>
+        <input type="text" id="seccion" />
+        <label for="genero">Género:</label>
+        <input type="text" id="genero" />
+        <label for="resultado3">Resultado:</label>
+        <input type="text" id="resultado3" class="resultado" readonly />
+        <div class="panel">
+          <div class="row">
+            <input
+              type="button"
+              value="Boletos"
+              class="column"
+              id="btnBoletos"
+            />
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
